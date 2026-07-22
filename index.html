@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실시간 암호화폐 추적기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>🪙 실시간 암호화폐 추적기</h1>
+        <p class="subtitle">
+          Binance USDT 마켓 · 매초 업데이트
+          <span id="status" class="status">연결 중...</span>
+        </p>
+      </header>
+
+      <!-- 검색 -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="search"
+          placeholder="코인 검색 (예: BTC, ETH)"
+          autocomplete="off"
+        />
+      </div>
+
+      <!-- 탭 (전체보기 / 관심항목) -->
+      <div class="tabs">
+        <button class="tab active" data-tab="all">전체보기</button>
+        <button class="tab" data-tab="favorites">
+          ⭐ 관심항목 <span id="fav-count" class="badge">0</span>
+        </button>
+      </div>
+
+      <!-- 코인 목록 -->
+      <div class="table-wrapper">
+        <table class="coin-table">
+          <thead>
+            <tr>
+              <th class="col-star"></th>
+              <th class="col-name">심볼</th>
+              <th class="col-price">현재가 (USDT)</th>
+              <th class="col-change">24h 변동률</th>
+              <th class="col-volume">거래량</th>
+            </tr>
+          </thead>
+          <tbody id="coin-list">
+            <!-- JS가 여기에 코인 행을 채움 -->
+          </tbody>
+        </table>
+        <p id="empty-message" class="empty-message" hidden>
+          표시할 항목이 없습니다.
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
