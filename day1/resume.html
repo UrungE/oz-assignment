@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Introduction</title>
+  </head>
+  <body>
+    <!-- ===== 자기소개 ===== -->
+    <h1>Self Introduction.</h1>
+    <hr />
+
+    <!-- 프로필 이미지 (요구사항 4: <img> 태그) -->
+    <img src="profile.jpg" alt="홍길동 프로필 이미지" width="200" />
+
+    <p>나는 홍길동입니다. 너희들은 나에 대해서 한번쯤은 들어봤을 것.</p>
+
+    <!-- 깃허브 레포지토리 링크 (요구사항 5: <a> 태그) -->
+    <a href="https://github.com/본인아이디/본인레포">내 Repository 바로가기</a>
+
+    <!-- 기본 정보 (요구사항 2: <ul>, <li>) -->
+    <ul>
+      <li>이름: 홍길동</li>
+      <li>나이: 130살</li>
+      <li>출생년도: 1443년</li>
+      <li>성별: 남자</li>
+      <li>거주지: 조선 팔도 강산 어디든</li>
+    </ul>
+
+    <!-- ===== 취미 & 선호 ===== -->
+    <h2>Hobby &amp; Preference</h2>
+    <hr />
+
+    <!-- 순서 있는 목록 (요구사항 2: <ol>, <li>) -->
+    <ol type="i">
+      <li>취미: 독서</li>
+      <li>좋아하는 음식: 닭백숙</li>
+      <li>좋아하는 영화: 전우치</li>
+      <li>좋아하는 책: 홍길동전</li>
+      <li>좋아하는 노래 장르: 국악, 판소리</li>
+    </ol>
+
+    <!-- ===== 경력 ===== -->
+    <h2>Career &amp; Work Experience</h2>
+    <hr />
+
+    <!-- 이력 테이블 (요구사항 3: table, thead, tbody, th, td, tr) -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>회사명</th>
+          <th>직무</th>
+          <th>기간</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>무직</td>
+          <td>백수</td>
+          <td>1443~1469</td>
+        </tr>
+        <tr>
+          <td>활빈당</td>
+          <td>의적</td>
+          <td>1470~1500</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===== 자기소개서 - 메일 발송 폼 ===== -->
+    <h2>Send Cover Letter</h2>
+    <hr />
+
+    <!-- 메일 발송 폼 (요구사항 6: form, input, button) -->
+    <form action="https://httpbin.org/post" method="post">
+      <label for="email">담당자 이메일:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="email@example.com"
+        required
+      />
+
+      <label for="company">회사명:</label>
+      <input
+        id="company"
+        type="text"
+        name="company"
+        placeholder="(주)Paper Company"
+        required
+      />
+
+      <button type="submit">이력서 전송하기</button>
+    </form>
+  </body>
+</html>
