@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | 김진형</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome (아이콘) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="resume_style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- ===== 사이드바 (col) ===== -->
+        <!-- 모바일(기본)에서는 상단 전체 폭, lg 이상에서 왼쪽 고정 -->
+        <aside class="col-12 col-lg-3 sidebar text-white p-4">
+          <h5 class="mb-4 fw-bold">Jinhyung's Resume</h5>
+          <nav class="nav flex-column">
+            <a class="nav-link text-white active" href="#top">이력서</a>
+            <a class="nav-link text-white-50" href="#skills">Skills</a>
+            <a class="nav-link text-white-50" href="#career">Career</a>
+            <a class="nav-link text-white-50" href="#contact">Contact</a>
+          </nav>
+        </aside>
+
+        <!-- ===== 본문 (col) ===== -->
+        <main class="col-12 col-lg-9 py-5 px-4 px-lg-5">
+          <div class="resume-card card border-0 shadow-sm mx-auto">
+            <div class="card-body p-4 p-md-5">
+              <!-- 프로필 헤더 -->
+              <section id="top" class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-start mb-4">
+                <div class="text-center text-md-start">
+                  <h1 class="fw-bold mb-3">Kim Jin-hyung</h1>
+                  <div class="d-flex flex-column flex-sm-row gap-3 text-secondary small">
+                    <span><i class="fa-solid fa-phone me-1"></i> 010-1234-5678</span>
+                    <span><i class="fa-solid fa-at me-1"></i> jinhyung@example.com</span>
+                    <a
+                      class="text-decoration-none text-secondary"
+                      href="https://github.com/UrungE/oz-assignment"
+                    >
+                      <i class="fa-brands fa-github me-1"></i> 김진형's Github
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="17147327768.jpg"
+                  alt="김진형 프로필 이미지"
+                  class="rounded-circle profile-img mt-4 mt-md-0"
+                />
+              </section>
+
+              <hr class="mb-4" />
+
+              <!-- 소개 -->
+              <section class="mb-5">
+                <h2 class="section-heading">Introduce</h2>
+                <p class="text-body-secondary mb-1">
+                  헬스케어 도메인에서 AI 서비스를 만드는 것을 목표로 공부 중인
+                  풀스택 개발자 지망생입니다.
+                </p>
+                <p class="text-body-secondary mb-1">
+                  복잡한 문제를 단순한 코드로 풀어내는 것을 좋아하며,
+                  백엔드 API 설계와 데이터 분석에 관심이 많습니다.
+                </p>
+                <p class="text-body-secondary mb-0">
+                  팀과 함께 성장하며 안정적인 시스템을 만드는 환경을 지향합니다.
+                </p>
+              </section>
+
+              <!-- 스킬 (Bootstrap badge 활용) -->
+              <section id="skills" class="mb-5">
+                <h2 class="section-heading">Skills</h2>
+
+                <p class="skill-label">LANGUAGE</p>
+                <div class="mb-3">
+                  <span class="badge skill-badge">Python</span>
+                  <span class="badge skill-badge">JavaScript</span>
+                  <span class="badge skill-badge">SQL</span>
+                </div>
+
+                <p class="skill-label">FRAMEWORK</p>
+                <div class="mb-3">
+                  <span class="badge skill-badge">FastAPI</span>
+                  <span class="badge skill-badge">PyTorch</span>
+                  <span class="badge skill-badge">Bootstrap</span>
+                </div>
+
+                <p class="skill-label">DATABASE</p>
+                <div class="mb-3">
+                  <span class="badge skill-badge">SQLite</span>
+                  <span class="badge skill-badge">PostgreSQL</span>
+                </div>
+
+                <p class="skill-label">TOOLS</p>
+                <div>
+                  <span class="badge skill-badge">Git</span>
+                  <span class="badge skill-badge">GitHub</span>
+                  <span class="badge skill-badge">VS Code</span>
+                </div>
+              </section>
+
+              <!-- 경력 (Bootstrap table) -->
+              <section id="career" class="mb-5">
+                <h2 class="section-heading">Career &amp; Work Experience</h2>
+                <div class="table-responsive">
+                  <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                      <tr>
+                        <th>회사명</th>
+                        <th>직무</th>
+                        <th>기간</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>OZ AI 헬스케어 캠프</td>
+                        <td>백엔드 개발 (team-03)</td>
+                        <td>2026 ~ 현재</td>
+                      </tr>
+                      <tr>
+                        <td>활빈당</td>
+                        <td>의적</td>
+                        <td>1470 ~ 1500</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <!-- 취미 -->
+              <section class="mb-5">
+                <h2 class="section-heading">Hobby &amp; Preference</h2>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">취미: 독서</li>
+                  <li class="list-group-item">좋아하는 음식: 닭백숙</li>
+                  <li class="list-group-item">좋아하는 영화: 전우치</li>
+                  <li class="list-group-item">좋아하는 노래 장르: 국악, 판소리</li>
+                </ul>
+              </section>
+
+              <!-- 연락 폼 (Bootstrap form 컴포넌트) -->
+              <section id="contact">
+                <h2 class="section-heading">Send Cover Letter</h2>
+                <form action="https://httpbin.org/post" method="post">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">담당자 이메일</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="email@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="company" class="form-label">회사명</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="company"
+                      name="company"
+                      placeholder="(주)Paper Company"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    이력서 전송하기
+                  </button>
+                </form>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS (navbar toggle, modal 등 동작에 필요) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
