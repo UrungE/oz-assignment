@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Introduction</title>
+  </head>
+  <body>
+    <!-- ===== 자기소개 ===== -->
+    <h1>Self Introduction.</h1>
+    <hr />
+
+    <!-- 프로필 이미지 (요구사항 4: <img> 태그) -->
+    <img src="17147327768.jpg" alt="바다 토끼" width="200" />
+
+    <p>나는 김진형입니다. 너희들은 나에 대해서 한번쯤은 들어봤을 것.</p>
+
+    <!-- 깃허브 레포지토리 링크 (요구사항 5: <a> 태그) -->
+    <a href="https://github.com/UrungE/oz-assignment">
+
+    <!-- 기본 정보 (요구사항 2: <ul>, <li>) -->
+    <ul>
+      <li>이름: 김진형</li>
+      <li>나이: 25살</li>
+      <li>출생년도: 2002년</li>
+      <li>성별: 남자</li>
+      <li>거주지: 부산</li>
+    </ul>
+
+    <!-- ===== 취미 & 선호 ===== -->
+    <h2>Hobby &amp; Preference</h2>
+    <hr />
+
+    <!-- 순서 있는 목록 (요구사항 2: <ol>, <li>) -->
+    <ol type="i">
+      <li>취미: 게임</li>
+      <li>좋아하는 음식: 고기</li>
+      <li>좋아하는 영화: 기생수</li>
+      <li>좋아하는 책: 동물농장</li>
+      <li>좋아하는 노래 장르: 팝, 창팝</li>
+    </ol>
+
+    <!-- ===== 경력 ===== -->
+    <h2>Career &amp; Work Experience</h2>
+    <hr />
+
+    <!-- 이력 테이블 (요구사항 3: table, thead, tbody, th, td, tr) -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>회사명</th>
+          <th>직무</th>
+          <th>기간</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>선원</td>
+          <td>조타수</td>
+          <td>2002~2027</td>
+        </tr>
+        <tr>
+          <td>밀짚모자</td>
+          <td>해적</td>
+          <td>2028~2058</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===== 자기소개서 - 메일 발송 폼 ===== -->
+    <h2>Send Cover Letter</h2>
+    <hr />
+
+    <!-- 메일 발송 폼 (요구사항 6: form, input, button) -->
+    <form action="https://httpbin.org/post" method="post">
+      <label for="email">담당자 이메일:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="email@example.com"
+        required
+      />
+
+      <label for="company">회사명:</label>
+      <input
+        id="company"
+        type="text"
+        name="company"
+        placeholder="(주)Paper Company"
+        required
+      />
+
+      <button type="submit">이력서 전송하기</button>
+    </form>
+  </body>
+</html>
