@@ -2,20 +2,40 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>사칙연산 계산기</title>
-    <script src="caculator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 사칙연산 계산기 v2</title>
+    <link rel="stylesheet" href="caculator_style.css" />
   </head>
   <body>
-    <h1>콘솔창 계산기 프로그램</h1>
+    <div class="calculator">
+      <input type="text" id="display" readonly value="0" />
+      <div class="buttons">
+        <!-- data-action: 이 버튼이 어떤 동작을 하는지 표시 -->
+        <button class="on-off" data-action="power">ON/OFF</button>
+        <button class="clear" data-action="clear">C</button>
+        <button class="operator" data-value="/">/</button>
 
-    <h3>Window OS의 경우</h3>
-    <hr />
-    <p>1. F12 키를 눌러 콘솔 창을 여세요.</p>
-    <p>2. start()를 콘솔창에 입력하여 계산기를 실행합니다.</p>
+        <button class="number" data-value="7">7</button>
+        <button class="number" data-value="8">8</button>
+        <button class="number" data-value="9">9</button>
+        <button class="operator" data-value="*">*</button>
 
-    <h3>Mac OS의 경우</h3>
-    <hr />
-    <p>1. Option + Command + i 키를 눌러 콘솔 창을 여세요.</p>
-    <p>2. start()를 콘솔창에 입력하여 계산기를 실행합니다.</p>
+        <button class="number" data-value="4">4</button>
+        <button class="number" data-value="5">5</button>
+        <button class="number" data-value="6">6</button>
+        <button class="operator" data-value="-">-</button>
+
+        <button class="number" data-value="1">1</button>
+        <button class="number" data-value="2">2</button>
+        <button class="number" data-value="3">3</button>
+        <button class="operator" data-value="+">+</button>
+
+        <button class="number" data-value=".">.</button>
+        <button class="number" data-value="0">0</button>
+        <button class="enter" data-action="enter">Enter</button>
+      </div>
+    </div>
+
+    <script src="caculator.js"></script>
   </body>
 </html>
